@@ -60,10 +60,10 @@ Image Hub supports Envoy-based data planes. Deployment instructions for each sup
 
 1. Upon visiting the image-hub homepage, we would need to signup for an account! Go ahead and click the "Sign Up" button in the top right.
 1. Enter the login details, and select a plan; Personal gives you 10 pulls per minute, Team gives you 100 pulls per minute, and Enterprise will give you 1000 pulls per minute.
-1. After signing up, you should be redirected to the login page, where you can login and start using the sample app.
-1. On the main page, open up the network network tab, and reload the page. This will allow you to see the request-response of the app.
+1. After signing up, you should be redirected to the login page, where you can log in and start using the sample app.
+1. On the main page, open up the network tab, and reload the page. This will allow you to see the request-response of the app.
 1. Go ahead and click the download button a couple of times. You'll notice that there is nothing actually limiting you from crossing the number of pulls according to the plan you chose!
-1. Alternatively you could test the above by navigating to http://imagehub.meshery.io:<environment port>/pull, and then looking at the resquest-responses.
+1. Alternatively, you could test the above by navigating to http://imagehub.meshery.io:<environment port>/pull and then looking at the request-responses.
 
 ## Deploying the Rate Limiter WASM Filter for Envoy
 
@@ -76,7 +76,7 @@ the command `kubectl delete pods <exact web pod name> <exact api pod name>`. Thi
 
 1. Test your ability to "pull" an image (images are not in fact pulled, but an HTTP request is sent to the backend `api`). You would not be able to pull an image, and the response would say "unauthorized".
 1. Sign up a new user and select a subscription plan.
-1. Login as that user.
+1. Log in as that user.
 1. Test your ability to "pull" an image. You should be able to pull an image.
 1. Open Meshery's performance management page (http://localhost:9081/performance)
 1. Configure a performance test against http://x.x.x.x:31118/api/pull (where x.x.x.x is your machine's host IP address, not "localhost")
@@ -127,7 +127,7 @@ Our projects are community-built and welcome collaboration. 👍 Be sure to see 
 <p>The <a href="https://layer5.io">Layer5</a> community represents the largest collection of service mesh projects and their maintainers in the world.</p>
 
 **Open Source First**
-<p>We build projects to provide learning environments, deployment and operational best practices, performance benchmarks, create documentation, share networking opportunities, and more. Our shared commitment to the open source spirit pushes Layer5 projects forward.</p>
+<p>We build projects to provide learning environments, deployment, and operational best practices, performance benchmarks, create documentation, share networking opportunities, and more. Our shared commitment to the open source spirit pushes Layer5 projects forward.</p>
 
 **License**
 

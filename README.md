@@ -18,7 +18,7 @@ Image Hub is a sample application written to run on [Consul](https://meshery.lay
 
 Image Hub supports Envoy-based data planes. Deployment instructions for each supported service mesh are below.
 
-### Using Istio (pending [PR #196](https://github.com/layer5io/meshery-istio/pull/196)+release; clone and do make run for now):
+### Using Istio
 1) Use [Meshery](https://github.com/layer5io/meshery) to deploy [istio](https://github.com/layer5io/advanced-istio-service-mesh-workshop/blob/master/lab-1/README.md) and the Image Hub sample application (Management > Istio > Manage Sample Application Lifecycle > Image-Hub ) onto the Istio service mesh.
 2) To map `imagehub.meshery.io` to the appropriate IP, run the following command to add the appropriate entry in the `"\etc\hosts"` file: 
 
@@ -63,7 +63,7 @@ Image Hub supports Envoy-based data planes. Deployment instructions for each sup
 1. After signing up, you should be redirected to the login page, where you can log in and start using the sample app.
 1. On the main page, open up the network tab, and reload the page. This will allow you to see the request-response of the app.
 1. Go ahead and click the download button a couple of times. You'll notice that there is nothing actually limiting you from crossing the number of pulls according to the plan you chose!
-1. Alternatively, you could test the above by navigating to http://imagehub.meshery.io:<environment port>/pull and then looking at the request-responses.
+1. Alternatively, you could test the above by navigating to imagehub.meshery.io:< environment port >/pull and then looking at the request-responses.
 
 ## Deploying the Rate Limiter WASM Filter for Envoy
 
@@ -96,7 +96,7 @@ the command `kubectl delete pods <exact web pod name> <exact api pod name>`. Thi
 
 <a href="https://www.youtube.com/watch?v=5BrbbKZOctw&list=PL3A-A6hPO2IN_HSU0pSfijBboiHggs5mC&index=4&t=0s"><img alt="DockerCon'2020" src="docs/assets/img/readme/docker-con-2020.png"  style="margin: 10px auto;"/></a>
 
-- [DockerCon 2020](https://docker.events.cube365.net/docker/dockercon/content/Videos/63TCCNpzDC7Xxnm8b) | [deck](https://calcotestudios.com/talks/decks/slides-dockercon-2020-service-meshing-with-docker-desktop-and-webassembly.html) | ([video](https://www.youtube.com/watch?v=5BrbbKZOctw&list=PL3A-A6hPO2IN_HSU0pSfijBboiHggs5mC&index=4&t=0s)
+- [DockerCon 2020](https://docker.events.cube365.net/docker/dockercon/content/Videos/63TCCNpzDC7Xxnm8b) | [deck](https://calcotestudios.com/talks/decks/slides-dockercon-2020-service-meshing-with-docker-desktop-and-webassembly.html) | [video](https://www.youtube.com/watch?v=5BrbbKZOctw&list=PL3A-A6hPO2IN_HSU0pSfijBboiHggs5mC&index=4&t=0s)
 
 <div>&nbsp;</div>
 
